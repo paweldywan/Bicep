@@ -46,6 +46,11 @@ Before the workflow can run, configure the following secrets in your GitHub repo
 
 3. **AZURE_RG** - Target resource group name (e.g., `Bicep`)
 
+**Important:** Ensure the resource group specified in `AZURE_RG` exists before running the workflow. Create it using:
+```bash
+az group create --name Bicep --location eastus
+```
+
 #### Creating a Service Principal
 
 To create the service principal credentials:
