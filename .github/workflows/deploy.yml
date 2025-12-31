@@ -21,5 +21,4 @@ jobs:
           resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./main.bicep
           parameters: storagePrefix=stg
-          deploymentName: 'bicep-deployment-${{ github.run_number }}'
           failOnStdErr: false
